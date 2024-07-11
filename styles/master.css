@@ -1,0 +1,123 @@
+@font-face {
+    font-family: terminal;
+    src: url("../assets/Web437_IBM_VGA_8x14.woff") format("woff");
+}
+
+@font-face {
+    font-family: icons;
+    src: url("../assets/GohuFontuni11NerdFontMono-Regular.ttf") format("woff");
+}
+
+
+html, body {
+    background-color: rgba(12, 12, 12, 0.849);
+    margin: 0 auto;
+    padding: 0;
+    width: 100vw;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+    padding: 20px 40px;
+    margin: 0 auto;
+    font-family: terminal;
+    font-size: 18px;
+    font-weight: bold;
+    position: relative;
+    z-index: 2;
+}
+
+.logo{
+    text-align: left;
+    width: 30%;
+}
+
+.logo a{
+    text-decoration: none;
+    color: #888;
+}
+
+.logo a:hover{
+    color: white;
+}
+
+.logo pre{
+    text-decoration: none;
+    font-family: terminal;
+    font-size: 4px;
+}
+
+.menu .pages{
+    width: 30%;
+    text-align: start;
+}
+
+.menu .pages a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: #888;
+}
+
+.menu .pages a:hover{
+    text-decoration: underline;
+}
+
+.menu .pages .selected{
+    color: white;
+}
+
+.menu .links a{
+    width: 30%;
+    font-family: icons;
+    margin-left: 5px;
+    padding: 0 10px;
+    border-radius: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    color: rgba(12, 12, 12, 0.849);
+    background-color: #888;
+}   
+
+.menu .links a:hover{
+    background-color: white;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    min-height: 82vh;
+}
+
+.content .cursor{
+    color: white;
+    animation: blink 1s steps(1, end) infinite;
+}
+
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+.footer {
+    margin: 0 auto;
+    width: 70%;
+    padding: 10px 0;
+    border-top: 1px solid #444;
+    font-family: terminal;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+}
+
